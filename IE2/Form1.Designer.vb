@@ -35,6 +35,7 @@ Partial Class Form1
         Me.ComboBox2 = New System.Windows.Forms.ComboBox
         Me.ComboBox3 = New System.Windows.Forms.ComboBox
         Me.Aceptar = New System.Windows.Forms.Button
+        Me.Cancelar = New System.Windows.Forms.Button
         Me.SuspendLayout()
         '
         'Id
@@ -146,11 +147,21 @@ Partial Class Form1
         Me.Aceptar.Text = "Aceptar"
         Me.Aceptar.UseVisualStyleBackColor = True
         '
+        'Cancelar
+        '
+        Me.Cancelar.Location = New System.Drawing.Point(95, 227)
+        Me.Cancelar.Name = "Cancelar"
+        Me.Cancelar.Size = New System.Drawing.Size(75, 23)
+        Me.Cancelar.TabIndex = 13
+        Me.Cancelar.Text = "Cancelar"
+        Me.Cancelar.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.Controls.Add(Me.Cancelar)
         Me.Controls.Add(Me.Aceptar)
         Me.Controls.Add(Me.ComboBox3)
         Me.Controls.Add(Me.ComboBox2)
@@ -183,5 +194,6 @@ Partial Class Form1
     Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
     Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
     Friend WithEvents Aceptar As System.Windows.Forms.Button
+    Friend WithEvents Cancelar As System.Windows.Forms.Button
 
 End Class

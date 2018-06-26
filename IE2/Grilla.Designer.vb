@@ -27,13 +27,14 @@ Partial Class Grilla
         Me.Elimina = New System.Windows.Forms.Button
         Me.Modifica = New System.Windows.Forms.Button
         Me.Nuevo = New System.Windows.Forms.Button
-        Me.TurnosCollectionBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.IdDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.FechaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.AsignaturaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.DocenteDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.Vocal1DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
         Me.Vocal2DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn
+        Me.TurnosCollectionBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Cancelar = New System.Windows.Forms.Button
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TurnosCollectionBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -79,10 +80,6 @@ Partial Class Grilla
         Me.Nuevo.Text = "Nuevo"
         Me.Nuevo.UseVisualStyleBackColor = True
         '
-        'TurnosCollectionBindingSource
-        '
-        Me.TurnosCollectionBindingSource.DataSource = GetType(IE2.TurnosCollection)
-        '
         'IdDataGridViewTextBoxColumn
         '
         Me.IdDataGridViewTextBoxColumn.DataPropertyName = "Id"
@@ -125,11 +122,25 @@ Partial Class Grilla
         Me.Vocal2DataGridViewTextBoxColumn.Name = "Vocal2DataGridViewTextBoxColumn"
         Me.Vocal2DataGridViewTextBoxColumn.ReadOnly = True
         '
+        'TurnosCollectionBindingSource
+        '
+        Me.TurnosCollectionBindingSource.DataSource = GetType(IE2.TurnosCollection)
+        '
+        'Cancelar
+        '
+        Me.Cancelar.Location = New System.Drawing.Point(54, 227)
+        Me.Cancelar.Name = "Cancelar"
+        Me.Cancelar.Size = New System.Drawing.Size(75, 23)
+        Me.Cancelar.TabIndex = 4
+        Me.Cancelar.Text = "Cancelar"
+        Me.Cancelar.UseVisualStyleBackColor = True
+        '
         'Grilla
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(626, 262)
+        Me.Controls.Add(Me.Cancelar)
         Me.Controls.Add(Me.Nuevo)
         Me.Controls.Add(Me.Modifica)
         Me.Controls.Add(Me.Elimina)
@@ -152,4 +163,5 @@ Partial Class Grilla
     Friend WithEvents Vocal1DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Vocal2DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TurnosCollectionBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents Cancelar As System.Windows.Forms.Button
 End Class
