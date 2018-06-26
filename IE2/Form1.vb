@@ -47,7 +47,7 @@
             MsgBox("seleccione opcion")
             Exit Sub
         End If
-        If CDate(TextBox2.Text) > DateTime.Now Then
+        If CDate(TextBox2.Text) < DateTime.Now Then
             MsgBox("Ingresar fecha")
             Exit Sub
         End If
