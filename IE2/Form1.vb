@@ -50,7 +50,9 @@
         If TextBox2.Text > DateTime.Now Then
             MsgBox("Ingresar fecha")
         End If
-
+        If ComboBox1.SelectedItem = ComboBox2.SelectedItem Or ComboBox1.SelectedItem = ComboBox3.SelectedItem Or ComboBox2.SelectedItem = ComboBox3.SelectedItem Then
+            MsgBox("No repita item")
+        End If
 
         Turno.Id = CInt(TextBox1.Text)
         Turno.fecha = TextBox2.Text
