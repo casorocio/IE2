@@ -47,11 +47,13 @@
             MsgBox("seleccione opcion")
             Exit Sub
         End If
-        If TextBox2.Text > DateTime.Now Then
+        If CDate(TextBox2.Text) > DateTime.Now Then
             MsgBox("Ingresar fecha")
+            Exit Sub
         End If
         If ComboBox1.SelectedItem = ComboBox2.SelectedItem Or ComboBox1.SelectedItem = ComboBox3.SelectedItem Or ComboBox2.SelectedItem = ComboBox3.SelectedItem Then
             MsgBox("No repita item")
+            Exit Sub
         End If
 
         Turno.Id = CInt(TextBox1.Text)
